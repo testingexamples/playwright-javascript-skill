@@ -81,7 +81,7 @@ async function demo() {
     const page = await context.newPage();
 
     try {
-        await page.goto("https://testingexamples.github.io");
+        await page.goto("https://testingexamples.github.io/en-001/practice/");
 
         // Find an element by id.
         const elementById = page.locator('#id-example-1');
@@ -159,7 +159,7 @@ Real test (an assertion that can fail):
 import { test, expect } from '@playwright/test';
 
 test('id example has expected text', async ({ page }) => {
-  await page.goto('https://testingexamples.github.io');
+  await page.goto('https://testingexamples.github.io/en-001/practice/');
   await expect(page.locator('#id-example-1')).toHaveText('Id Example 1');
 });
 ```
@@ -201,7 +201,7 @@ See a full real test suite with real assertions in
 
 - [demo-playwright-javascript](https://github.com/joelparkerhenderson/demo-playwright-javascript) —
   the locator-strategy walkthrough this skill's worked example is drawn
-  from, run against https://testingexamples.github.io (the generic,
+  from, run against https://testingexamples.github.io/en-001/practice/ (the generic,
   free-to-hammer fixture page).
 - [demo-playwright-javascript-for-google-search](https://github.com/testingexamples/demo-playwright-javascript-for-google-search) —
   the same patterns applied to Google Search. **Illustrative only** —
@@ -216,7 +216,7 @@ See a full real test suite with real assertions in
   https://www.nhs.wales/, showing what a genuine assertion-driven suite
   looks like end to end.
 - [Playwright docs: Getting started](https://playwright.dev/docs/intro)
-- [testingexamples.github.io](https://testingexamples.github.io/) — the
+- [testingexamples.github.io](https://testingexamples.github.io/en-001/practice/) — the
   free fixture page these demos target; safe to run against repeatedly.
 
 AGENTS.md and spec/index.md in this repo are the source of truth for this
